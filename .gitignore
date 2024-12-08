@@ -1,0 +1,11 @@
+compiled.js
+.cache/
+dist/
+.idea/
+.vscode/
+logs
+*.log
+.DS_Store
+build/Release
+node_modules/
+out/

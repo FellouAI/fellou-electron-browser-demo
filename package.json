@@ -1,0 +1,38 @@
+{
+  "name": "fellou-electron-browser",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "fellou browser",
+  "keywords": [],
+  "main": "main.js",
+  "author": "fellou",
+  "license": "MIT",
+  "scripts": {
+    "watch": "npx babel --watch tabs/index.jsx --out-file tabs/compiled.js",
+    "start": "npx babel tabs/index.jsx --out-file tabs/compiled.js && electron-forge start",
+    "package": "npx babel tabs/index.jsx --out-file tabs/compiled.js && electron-forge package",
+    "build": "npx babel tabs/index.jsx --out-file tabs/compiled.js && electron-forge make"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "@electron-forge/cli": "^7.6.0",
+    "@electron-forge/maker-deb": "^7.6.0",
+    "@electron-forge/maker-rpm": "^7.6.0",
+    "@electron-forge/maker-squirrel": "^7.6.0",
+    "@electron-forge/maker-zip": "^7.6.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.6.0",
+    "@electron-forge/plugin-fuses": "^7.6.0",
+    "@electron/fuses": "^1.8.0",
+    "classnames": "^2.2.6",
+    "electron": "^33.2.1",
+    "file-url": "^2.0.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1"
+  }
+}
